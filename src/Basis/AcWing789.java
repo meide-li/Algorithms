@@ -5,12 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-/**
- * 功能描述
- *
- * @author 古月
- * @date 2024/05/02  21:25
- */
 public class AcWing789 {
     public static void main(String[] args) {
         try(BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
@@ -21,9 +15,13 @@ public class AcWing789 {
                     .mapToInt(Integer::parseInt).toArray();
 
             for (int i = 0; i < q; i++) {
-                int k = Integer.parseInt(in.readLine());
-                int l = LBS(arr, 0, n - 1, k);
-                int r = RBS(arr, 0, n - 1, k);
+                int target = Integer.parseInt(in.readLine());
+                int l = LBS(arr, n, target);
+                if (arr[l] != target) System.out.println("-1 -1");
+                else {
+                    int r = RBS(arr, n, target);
+                    System.out.println(l + " " + r);
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -31,22 +29,25 @@ public class AcWing789 {
 
     }
 
-    private static int LBS(int[] arr, int left, int right, int k) {
+    private static int LBS(int[] arr, int n, int target) {
+        int left = 0;
+        int right = n - 1;
         while (left < right) {
             int mid = left + right >> 1;
-            if (arr[mid] >= k) right = mid;
+            if (arr[mid] >= target) right = mid;
             else left = mid + 1;
         }
         return left;
     }
 
-    private static int RBS(int[] arr, int left, int right, int k) {
+    private static int RBS(int[] arr, int n, int target) {
+        int left = 0;
+        int right = n - 1;
         while (left < right) {
             int mid = left + right + 1 >> 1;
-            if (arr[mid] <= k) left = mid;
+            if (arr[mid] <= target) left = mid;
             else right = mid - 1;
         }
         return right;
     }
-
 }
