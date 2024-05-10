@@ -4,14 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
-
-/**
- * 功能描述
- *
- * @author 古月
- * @date 2024/05/02  20:14
- */
+// 归并排序
 public class AcWing787 {
     public static void main(String[] args) {
         try(BufferedReader in = new BufferedReader(new InputStreamReader(System.in))){

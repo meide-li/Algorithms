@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
+// 数的范围
 public class AcWing789 {
     public static void main(String[] args) {
         try(BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
