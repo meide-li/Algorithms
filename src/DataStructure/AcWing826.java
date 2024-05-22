@@ -16,19 +16,18 @@ public class AcWing826 {
             for (int i = 0; i < m; i++) {
                 String[] s = in.readLine().split(" ");
                 switch (s[0]) {
-                    case "H": {
+                    case "H" -> {
                         int x = Integer.parseInt(s[1]);
                         addHead(x);
-                        break;
-                    } case "D": {
+                    }
+                    case "D" -> {
                         int k = Integer.parseInt(s[1]);
                         remove(k);
-                        break;
-                    } default: {
+                    }
+                    default -> {
                         int k = Integer.parseInt(s[1]);
                         int x = Integer.parseInt(s[2]);
                         add(k, x);
-                        break;
                     }
                 }
             }
