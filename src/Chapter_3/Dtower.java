@@ -1,7 +1,5 @@
 package Chapter_3;
 
-import static sun.swing.MenuItemLayoutHelper.max;
-
 /**
  * 功能描述
  *
@@ -12,10 +10,10 @@ public class Dtower {
     private static int[][] stower(int[][] a) {
         int n = a.length;
         int[][] s = new int[n][n];
-        for (int i = 0; i < n; i++) s[n - 1][i] = a[n - 1][i];
+        System.arraycopy(a[n - 1], 0, s[n - 1], 0, n);
         for (int i = n-2; i >= 0; i--) {
             for (int j = 0; j <= i; j++) {
-                s[i][j] = a[i][j] + max(s[i + 1][j], s[i + 1][j + 1]);
+                s[i][j] = a[i][j] + Math.max(s[i + 1][j], s[i + 1][j + 1]);
             }
         }
         return s;
