@@ -1,7 +1,7 @@
 package DataStructure;
 
 import java.io.*;
-
+// 连通块中点的数量
 public class AcWing837 {
     static final int N = 100010;
     static int[] p = new int[N];
