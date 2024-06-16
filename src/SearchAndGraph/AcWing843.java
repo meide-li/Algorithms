@@ -2,7 +2,6 @@ package SearchAndGraph;
 
 import java.io.*;
 import java.util.Arrays;
-
 // n皇后
 public class AcWing843 {
     static final int N = 12;

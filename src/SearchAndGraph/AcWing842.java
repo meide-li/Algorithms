@@ -1,7 +1,6 @@
 package SearchAndGraph;
 
 import java.io.*;
-
 // 排列数字
 public class AcWing842 {
     static boolean[] state = new boolean[10];
