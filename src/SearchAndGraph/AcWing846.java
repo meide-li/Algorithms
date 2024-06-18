@@ -4,9 +4,7 @@ import java.io.*;
 // 树的重心
 public class AcWing846 {
     static final int N = 100010;
-    static int[] e = new int[2 * N];
-    static int[] h = new int[2 * N];
-    static int[] ne = new int[2 * N];
+    static int[] e = new int[2 * N], h = new int[2 * N], ne = new int[2 * N];
     static int idx = 1;
     static boolean[] st = new boolean[N];
     static int res = N;
