@@ -5,7 +5,7 @@ import java.io.*;
 public class AcWing842 {
     static boolean[] state = new boolean[10];
     static int[] a = new int[10];
-    static BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+
     public static void main(String[] args) {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
             int n = Integer.parseInt(in.readLine());
@@ -16,6 +16,7 @@ public class AcWing842 {
     }
 
     private static void dfs(int u, int n) throws IOException {
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
         if (u > n) {
             for (int i = 1; i <= n; i++) out.write(a[i] + " ");
             out.newLine();

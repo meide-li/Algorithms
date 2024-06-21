@@ -8,6 +8,7 @@ public class AcWing846 {
     static int idx = 1;
     static boolean[] st = new boolean[N];
     static int res = N;
+
     public static void main(String[] args) {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
             int n = Integer.parseInt(in.readLine());

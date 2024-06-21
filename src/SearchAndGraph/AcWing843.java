@@ -9,7 +9,7 @@ public class AcWing843 {
     static boolean[] col = new boolean[N];
     static boolean[] dig = new boolean[2 * N];
     static boolean[] sdig = new boolean[2 * N];
-    static BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+
     public static void main(String[] args) {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
             int n = Integer.parseInt(in.readLine());
@@ -23,6 +23,7 @@ public class AcWing843 {
     }
 
     private static void dfs(int u, int n) throws IOException{
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
         if (u > n) {
             for (int i = 1; i <= n; i++) {
                 for (int j = 1; j <= n; j++) {

@@ -7,6 +7,7 @@ public class AcWing854 {
     static final int N = 205;
     static final int INF = 0x3f3f3f;
     static int[][] d = new int[N][N];
+
     public static void main(String[] args) {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
              BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out))) {

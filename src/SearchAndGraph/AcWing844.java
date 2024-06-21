@@ -11,6 +11,7 @@ public class AcWing844 {
     static final int N = 110;
     static int[][] a = new int[N][N];   // 棋盘
     static int[][] d = new int[N][N];   // 记录步数
+
     public static void main(String[] args) {
         try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
             String[] s = in.readLine().split(" ");
