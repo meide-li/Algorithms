@@ -3,7 +3,6 @@ package Math;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 // 线性筛法求素数
 public class AcWing868_2 {
     static final int N = 1000010;
